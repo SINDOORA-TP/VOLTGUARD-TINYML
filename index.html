@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoltGuard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+        <header>
+            <div>
+                <h1>⚡ VoltGuard</h1>
+                <p>Intelligent Battery Safety & Monitoring System</p>
+            </div>
+
+            <div class="connection">
+                <span class="dot"></span>
+                System Online
+            </div>
+        </header>
+
+
+        <!-- STATUS -->
+        <section class="status-card">
+
+            <div>
+                <p class="label">SYSTEM STATUS</p>
+
+                <h2 id="systemStatus">NORMAL</h2>
+
+                <p id="statusMessage">
+                    Battery operating within normal conditions
+                </p>
+            </div>
+
+            <div class="risk">
+                <p class="label">AI RISK SCORE</p>
+                <div id="riskScore">12%</div>
+            </div>
+
+        </section>
+
+
+        <!-- SENSOR CARDS -->
+        <section class="sensor-grid">
+
+            <div class="sensor-card">
+                <p>🔋 Voltage</p>
+                <h2 id="voltage">3.72 V</h2>
+            </div>
+
+            <div class="sensor-card">
+                <p>⚡ Current</p>
+                <h2 id="current">0.84 A</h2>
+            </div>
+
+            <div class="sensor-card">
+                <p>💡 Power</p>
+                <h2 id="power">3.12 W</h2>
+            </div>
+
+            <div class="sensor-card">
+                <p>🌡️ Temperature</p>
+                <h2 id="temperature">31.6 °C</h2>
+            </div>
+
+        </section>
+
+
+        <!-- BATTERY INFORMATION -->
+        <section class="panel">
+
+            <h2>Battery Monitoring</h2>
+
+            <div class="info-grid">
+
+                <div>
+                    <span>Temperature Rise</span>
+                    <strong id="tempRise">0.08 °C/s</strong>
+                </div>
+
+                <div>
+                    <span>Battery State</span>
+                    <strong id="batteryState">Healthy</strong>
+                </div>
+
+                <div>
+                    <span>Monitoring Mode</span>
+                    <strong>Edge AI</strong>
+                </div>
+
+                <div>
+                    <span>Sensor Status</span>
+                    <strong>Simulation</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GRAPH -->
+        <section class="panel">
+
+            <h2>Real-Time Battery Trend</h2>
+
+            <div class="graph">
+                <div class="graph">
+    <canvas id="trendCanvas"></canvas>
+</div>
+    
+
+        </section>
+
+
+        <!-- ALERT -->
+        <section class="alert-box">
+
+            <div>
+                <h3>⚠️ Safety Monitoring</h3>
+
+                <p id="alertMessage">
+                    No abnormal conditions detected.
+                </p>
+            </div>
+
+            <div id="alertIndicator" class="indicator">
+                ●
+            </div>
+
+        </section>
+        <section class="alert-box">
+
+    <div>
+        <h3>⚠️ Safety Monitoring</h3>
+
+        <p id="alertMessage">
+            No abnormal conditions detected.
+        </p>
+    </div>
+
+    <div id="alertIndicator" class="indicator">
+        ●
+    </div>
+
+</section>
+
+
+<!-- PUT THE NEW CODE HERE 👇 -->
+
+<section class="panel">
+
+    <h2>Simulation Controls</h2>
+
+    <div class="test-controls">
+
+        <button id="normalBtn" class="normal-btn">
+            🟢 Normal Test
+        </button>
+
+        <button id="abnormalBtn" class="abnormal-btn">
+            🔴 Abnormal Test
+        </button>
+
+    </div>
+
+    <p id="simulationMode">
+        Current Mode: Normal Simulation
+    </p>
+
+</section>
+
+
+<footer>
+    VoltGuard • Edge AI Battery Safety System
+</footer>
+
+
+        <!-- FOOTER -->
+        <footer>
+            VoltGuard • Edge AI Battery Safety System
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
